@@ -34,30 +34,7 @@ int main()
 
     int power=pow(10,n);
 
-    char choice='0';
-    do
-    {
-        printf("\n\n'0'   Exit\n'1'   Truncate\n'2'   Round off\n'3'    change input values\nEnter your choice:    ");
-        scanf(" %c",&choice);
-
-        switch(choice)
-        {
-            case '1':Truncate(x1,power);
-                    break;
-            case '2':Round_off(x1,power);
-                    break;
-            case '3': printf("\nEnter a no: ");
-                    scanf("%lf",&x1);
-                    printf("enter: ");
-                    scanf("%d",&n);
-                    power=pow(10,n);
-                    break;
-
-            case '0':printf("\nThank you");
-                    break;
-            default:printf("\nInvalid input");
-        }
-
-    }while(choice!='0');
+    Truncate(x1,power);
+    Round_off(x1,power);
     return 0;
 }
