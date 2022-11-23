@@ -8,29 +8,12 @@ int fun(int x)
 
 void find_interval(int *a,int *b)
 {
-    int i=0,j=1;
-    while(j<=5)
-    {
-        if((fun(i)>=0 && fun(j)<0)||(fun(i)<0 && fun(j)>=0)){
-            *a=i;*b=j;
-            return;
-        }
-        i++;
-        j++;
-    }
-    if(a==0 && b==0)
-    {
-        i=-1;j=-2;
-        while(j!=-5)
-        {
-            if((fun(i)>=0 && fun(j)<0)||(fun(i)<0 && fun(j)>=0)){
-                *a=i;*b=j;
-                return;
-            }
-            i--;
-            j--;
-        }      
-    }
+    for(int i=-5;i<5;i++)
+        if(fun(i)*fun(i+1)<0)
+         {
+          *a=i;
+          *b=i+1;
+         }  
 }
 int main()
 {

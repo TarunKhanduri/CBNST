@@ -10,7 +10,7 @@
         int i=1; 
         float x2=(x0+x1)/2;
         do{
-            printf("iteration &d\t%f \n",i,x2);
+            printf("iteration %d\t%f \n",i,x2);
             if(fun(x0)*fun(x2)<0){
                 x1=x2;
             }
