@@ -23,7 +23,7 @@ void solve(float *x,int n, float y[n][n], float value, float p,int ind)
 
     
 
-    float ans=y[ind][0] + p*y[ind][1] + p*(p-1)*y[ind-1][2]/2 + p*(p-1)*(p-2)*y[ind-1][3]/6 + p*(p-1)*(p-2)*(p-3)*y[ind-2][4]/24;
+    float ans=y[ind][0] + p*y[ind][1] + p*(p-1)*y[ind-1][2]/2 + p*(p-1)*(p+1)*y[ind-1][3]/6 + p*(p-1)*(p-2)*(p+1)*y[ind-2][4]/24;
     printf("\nans=  %0.5f",ans);
 
 

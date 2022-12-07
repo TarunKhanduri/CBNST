@@ -13,17 +13,10 @@ void solve(float h,float *y,int n)
     while(j<n)
     {
         if(j%3==0)
-        {
-            j++;
-            continue;
-        }
-        sumo+=y[j];
+            sume+=y[j];
+        else
+            sumo+=y[j];
         j++;
-    }
-    
-    for(int i=3;i<n;i+=3)
-    {
-        sume+=y[i];
     }
     sumo*=3;
     sume*=2;

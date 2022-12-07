@@ -46,12 +46,17 @@ int main()
 
     float p;
     int ind;
-    for(int i=n-1;i>=0;i--)
+     for(int i=n-1;i>=0;i--)
     {
         if(value<=x[i])
         {
-            p=(value-x[i])/(x[1]-x[0]);
-            ind=i;
+            continue;
+        }
+        else
+        {
+            p=(value-x[i+1])/(x[1]-x[0]);
+            // printf("%f  \n",x[i+1]);
+            ind=i+1;
             break;
         }
     }

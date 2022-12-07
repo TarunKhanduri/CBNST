@@ -1,0 +1,1 @@
+{"name":"Local: 017_Eulers_Method","url":"d:\\Git_Hub_Repositories\\CBNST\\017_Eulers_Method.c","tests":[{"id":1670381447165,"input":"0 1 0.1 1","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Git_Hub_Repositories\\CBNST\\017_Eulers_Method.c","group":"local","local":true}
